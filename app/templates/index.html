@@ -11,31 +11,31 @@
 
     <h2> Enter Values as mentioned: </h2>
     <form action="/" method="POST">
-        <input type="number" name="MEAN_RR" placeholder = "MEAN_RR" step="any">
+        <input type="number" name="MEAN_RR" placeholder="MEAN_RR" step="any" required>
         
 
-        <input type="number" name="RMSSD" placeholder = "RMSSD" step="any">
+        <input type="number" name="RMSSD" placeholder="RMSSD" step="any" required>
         
 
-        <input type="number" name="pNN25" placeholder = "pNN25" step="any">
+        <input type="number" name="pNN25" placeholder="pNN25" step="any" required>
         
 
-        <input type="number" name="pNN50" placeholder = "pNN50" step="any">
+        <input type="number" name="pNN50" placeholder="pNN50" step="any" required>
         
 
-        <input type="number" name="LF" placeholder = "LF"  step="any">
+        <input type="number" name="LF" placeholder="LF" step="any" required>
         
 
-        <input type="number" name="HF" placeholder = "HF" step="any">
+        <input type="number" name="HF" placeholder="HF" step="any" required>
         
 
-        <input type="number" name="LF_HF" placeholder = "LF_HF" step="any">
+        <input type="number" name="LF_HF" placeholder="LF_HF" step="any" required>
         
-        <input type="submit">
+        <input type="submit" value="Predict Stress Level">
     </form>
     {% if cond %}
-        <h2>Predicted Condtion: </h2>
-        {{cond}}
+        <h2>Predicted Condition: </h2>
+        {{ cond|e }}
     {% endif %}
     
 </body>
